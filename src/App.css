@@ -1,0 +1,26 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alkatra&family=Anton&family=Bungee+Spice&family=Lilita+One&family=Lobster&family=Merriweather:wght@300&family=Rubik+Bubbles&family=Rubik+Gemstones&family=Rubik+Iso&family=Sacramento&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.HeadTag {
+  font-family: "Rubik Gemstones", cursive;
+}
+.FontFamily {
+  font-family: "Lobster", cursive;
+}
+
+.TextStyle > li {
+  text-decoration: none;
+  list-style: none;
+}
+.fa fa-trash {
+  background-color: red;
+  cursor: pointer;
+}
+/* Define the styles for the active tab */
+.active-tab {
+  text-decoration: underline 2px red; /* Underline with green color */
+  color: red; /* Set the text color to green */
+}
