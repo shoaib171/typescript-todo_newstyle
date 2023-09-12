@@ -27,7 +27,6 @@ const TodoList: React.FC<iListProps> = ({ TodoData, setTodoData }) => {
 
   const RenderNotesList = () => {
     return filterData.map((task) => {
-      // Use filterData instead of TodoData
       return (
         <TodoCard
           key={task.id}
@@ -71,13 +70,10 @@ const TodoList: React.FC<iListProps> = ({ TodoData, setTodoData }) => {
 
   return (
     <>
-      <div className="container mt-2">
-        <div className="row ms-3">
-          {RenderNotesList() && RenderNotesList().length > 0 && (
-            <h3 className="FontFamily">Todo_List</h3>
-          )}
-        </div>
-      </div>
+      {RenderNotesList() && RenderNotesList().length > 0 && (
+        <h3 className="FontFamily">Todo_List</h3>
+      )}
+
       {RenderNotesList()}
     </>
   );

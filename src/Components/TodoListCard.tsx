@@ -22,7 +22,7 @@ const TodoCard: React.FC<ICardProps> = ({
   };
 
   return (
-    <div className="container">
+    <div className="container ">
       <div className="row">
         <div className="col-lg-12 col-md-12 col-sm-12">
           <ul className="TextStyle" key={task.id}>

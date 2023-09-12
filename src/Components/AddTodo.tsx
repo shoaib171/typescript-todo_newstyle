@@ -13,9 +13,8 @@ const AddTodo: React.FunctionComponent<IAppProps> = ({
   TodoData,
   setTodoData,
 }) => {
-  // const [todoData, setTodoData] = React.useState("");
-  const [error, setError] = React.useState<string>("");
   const titleRef = React.useRef<HTMLInputElement | null>(null);
+  const [error, setError] = React.useState<string>("");
 
   useEffect(() => {
     const StoreData = localStorage.getItem("TodoData");
@@ -54,7 +53,7 @@ const AddTodo: React.FunctionComponent<IAppProps> = ({
     <>
       {error && <Alert variant="danger">{error}</Alert>}
       <Form onSubmit={handleFormSubmit}>
-        <Form.Group className="mb-3 d-lg-flex">
+        <Form.Group className="mb-3 d-flex">
           <Form.Control
             type="text"
             placeholder="Write your Todo here...."

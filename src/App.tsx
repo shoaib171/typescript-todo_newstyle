@@ -13,31 +13,23 @@ function App() {
   const [TodoData, setTodoData] = useState<TodoModel[]>([]);
   return (
     <>
-      <Container className="mt-5">
-        <Row className="w-75 m-auto">
-          <Col>
-            <Header />
-          </Col>
-        </Row>
-      </Container>
-      <Container>
-        <Row className="w-75 m-auto">
-          <Col>
-            <Tabs />
-            <hr className="" />
-          </Col>
-        </Row>
-        <Row className="mt-4 w-75 m-auto">
-          <Col>
+      <Header />
+      <Tabs />
+      <hr className="w-75 m-auto" />
+      <div className="container mt-3">
+        <div className="row">
+          <div className="col-lg-12 col-md-12 col-sm-12 ">
             <AddTodo TodoData={TodoData} setTodoData={setTodoData} />
-          </Col>
-        </Row>
-        <Row className=" w-75 m-auto">
-          <Col>
+          </div>
+        </div>
+      </div>
+      <div className="container mt-3">
+        <div className="row ">
+          <div className="col-lg-12 col-md-12 col-sm-12 ">
             <TodoList TodoData={TodoData} setTodoData={setTodoData} />
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
